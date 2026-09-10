@@ -5,6 +5,7 @@ nav {
 
 nav a {
     color: white;
+    padding: 5px;
     display: block;
     text-decoration: none;
     margin-right: 20px;
@@ -15,6 +16,14 @@ a:hover{
 }
 
 img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -41,10 +50,16 @@ aside {
 }
 
 aside img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 p {
     padding: 0;
+}
+
+footer{
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    text-align: center;
 }
