@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: #000000;
     --secondary-color: #f0f0f0;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --accent2-color: #f0f0f0;
     --heading-font: "Time New Roman", "Georgia", serif;
     --body-font: "Arial", "Helvetica", sans-serif;
 }
@@ -30,7 +30,7 @@ h1, h2 {
 }
 
 .navigation {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     padding: 10px;
     display: flex;
     flex-direction: column;
