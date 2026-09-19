@@ -29,10 +29,19 @@ h1, h2 {
     color: var(--primary-color)
 }
 
-nav, p, section, article {
+.navigation {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+p, section, article {
     margin: 16px;
     padding: 8px;
 }
+
 
 .socialmedia a {
     text-transform: none;
