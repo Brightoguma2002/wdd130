@@ -1,6 +1,6 @@
 :root {
     --primary-color: #264653;
-    --secondary-color: #f4a261;
+    --secondary-color: #264653;
     --accent1-color: #2a9d8f;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -26,7 +26,7 @@ footer {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -126,7 +126,7 @@ section p {
 /* Footer */
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     display: flex;
     justify-content: space-between;
