@@ -1,7 +1,7 @@
 :root {
     --primary-color: #264653;
-    --secondary-color: #6b7;
-    --accent1-color: #2a9d8f;
+    --secondary-color: #174f78;
+    --accent1-color: #2a9d90;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -199,3 +199,4 @@ nav {
     padding-top: 8px;
 
     font-size: 14px;
+}
