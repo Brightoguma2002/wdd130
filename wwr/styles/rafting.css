@@ -149,3 +149,53 @@ footer p {
     width: 30px;
     height: 30px;
 }
+
+nav {
+    display: flex;
+    list-style: none;
+}
+
+
+.adventure {
+
+    margin-top: 60px;
+
+    margin-bottom: 50px;
+
+}
+
+.adventure-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(5, 1fr);
+
+    gap: 15px;
+
+}
+
+.adventure-gallery figure {
+
+    margin: 0;
+
+}
+
+.adventure-gallery img {
+
+    width: 100%;
+
+    height: 130px;
+
+    object-fit: cover;
+
+}
+
+.adventure-gallery figcaption {
+
+    text-align: center;
+
+    padding-top: 8px;
+
+    font-size: 14px;
