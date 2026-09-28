@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+               <legend>Contact Information</legend>
+
+              <label for="username">Username:</label>
+              <input type="text" id="fullname" name="fullname" required>
+              
+              <br>
+        
+              <label for="email">Email:</label>
+              <input type="text" id="useremail" name="useremail" required>
+            </fieldset>
+            <fieldset>
+                <legend>Question</legend>
+               <label for="browser">What is your favorite browser?</label> 
+               <select name="browser" id="browser">
+                  <option value="chrome">Chrome</option>
+                  <option value="safari">Safari</option>
+                  <option value="edge">Edge</option>
+                  <option value="brave">Brave</option>
+                  <option value="other">Other</option>
+               </select>
+
+               <br>
+
+              <label for="pet">Do you have a pet?</label>
+              <input type="checkbox" id="pet" name="pet">
+
+              <br>
+
+              <label for="textarea">List the places you have lived </label>
+              <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+    </main>
+    <button type="submit">Submit Poll</button>
+    
+</body>
+</html>
