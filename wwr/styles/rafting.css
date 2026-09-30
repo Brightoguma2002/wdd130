@@ -25,6 +25,14 @@ footer {
     margin: 0 auto;
 }
 
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ---------- Header ---------- */
+
 header {
     background-color: var(--secondary-color);
     color: white;
@@ -34,97 +42,211 @@ header {
     padding: 10px;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
 }
 
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 15px;
+    gap: 0;
     padding: 10px;
 }
 
 .navigation a {
+    flex: 1;
+    max-width: 130px;
+    text-align: center;
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 10px;
+    border: 1px solid white;
 }
 
 .navigation a:hover {
     color: var(--accent2-color);
 }
 
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+/* ---------- Company info (centered) ---------- */
+
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.socialmedia a {
+.contact-info h1 {
+    margin-bottom: 8px;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 2px 0;
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: var(--primary-color);
     text-decoration: none;
 }
 
-/* Hero section */
+/* ---------- Map (left) + Form (right) ---------- */
 
-.hero {
-    position: relative;
+.contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
 }
 
-.hero > img {
+.map {
+    display: block;
+    border: 0;
+}
+
+.map iframe {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    min-height: 420px;
+    border: 0;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
+.contact-form {
+    margin: 0;
+    padding: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    width: 80px;
+    font-size: 0.9rem;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    padding: 0.5rem;
+    font: inherit;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+/* Message box: label on top */
+.form-row.stacked {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+}
+
+.form-row.stacked label {
+    width: auto;
+}
+
+/* Message Purpose: label left, options right */
+fieldset {
+    border: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+legend {
+    float: left;
+    width: 80px;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+.radio-option,
+.checkbox-option {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.radio-option {
+    margin-left: 96px;
+}
+
+.checkbox-option {
+    margin-bottom: 1rem;
+}
+
+/* Submit button */
+
+.submit-btn {
+    display: block;
     width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    padding: 0.75rem 1.75rem;
+    font: inherit;
+    font-weight: bold;
     color: #fff;
+    background-color: #0b4f8a;
+    border: 2px solid #0b4f8a;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-/* Article overlay */
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #083a66;
+    border-color: #083a66;
+}
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(38, 70, 83, 0.8);
-    color: white;
+/* Visible keyboard focus */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.submit-btn:focus {
+    outline: 3px solid #ffb400;
+    outline-offset: 2px;
+}
+
+/* ---------- Team (bordered box, 3 in a row) ---------- */
+
+.team {
+    border: 1px solid #555;
+    text-align: center;
     padding: 16px;
+    margin-bottom: 1.5rem;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 16px;
+.team h2 {
+    margin-bottom: 16px;
 }
 
-.hero article p {
-    color: white;
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
-/* History and Adventure sections */
-
-section h2 {
-    margin-bottom: 10px;
+.team-grid figure {
+    margin: 0;
+    text-align: center;
 }
 
-section p {
-    line-height: 1.6;
+.team-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
 }
 
-/* Footer */
+.team-grid figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
 
 footer {
     background-color: var(--secondary-color);
@@ -145,58 +267,11 @@ footer p {
     align-items: center;
 }
 
+.socialmedia a {
+    text-decoration: none;
+}
+
 .socialmedia img {
     width: 30px;
     height: 30px;
-}
-
-nav {
-    display: flex;
-    list-style: none;
-}
-
-
-.adventure {
-
-    margin-top: 60px;
-
-    margin-bottom: 50px;
-
-}
-
-.adventure-gallery {
-
-    display: grid;
-
-    grid-template-columns:
-
-        repeat(5, 1fr);
-
-    gap: 15px;
-
-}
-
-.adventure-gallery figure {
-
-    margin: 0;
-
-}
-
-.adventure-gallery img {
-
-    width: 100%;
-
-    height: 130px;
-
-    object-fit: cover;
-
-}
-
-.adventure-gallery figcaption {
-
-    text-align: center;
-
-    padding-top: 8px;
-
-    font-size: 14px;
 }
