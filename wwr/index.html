@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home | Whitewater Rafting</title>
+    <title>Whitewater Rafting Organizations | Home</title>
 
     <meta name="description"
         content="Explore exciting whitewater rafting adventures for beginners and experienced rafters.">
 
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Osarodion Bright Oguma">
 
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -18,9 +18,11 @@
 <body>
 
     <header>
-        <img src="images/whitewaterrafting.png" alt="Whitewater Rafting Logo">
+        <img src="images/whitewaterrafting.png"
+            alt="Whitewater Rafting Organizations logo"
+            class="logo">
 
-        <nav>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -30,8 +32,9 @@
 
     <main>
 
-        <section class="hero">
-            <img src="images/rafting.jpg" alt="People rafting on a river">
+        <section class="home-hero">
+            <img src="images/rafting3.jpg"
+                alt="People enjoying a whitewater rafting adventure">
 
             <h1>Experience the Adventure</h1>
         </section>
@@ -39,18 +42,27 @@
         <section class="newsletter">
             <h2>Join Our Newsletter</h2>
 
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+            <p>Sign up to receive news about our rafting adventures.</p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+            <form action="#" method="post">
+
+                <div>
+                    <label for="home-name">Name</label>
+                    <input type="text" id="home-name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="home-email">Email</label>
+                    <input type="email" id="home-email" name="email" required>
+                </div>
 
                 <button type="submit">Subscribe</button>
+
             </form>
         </section>
 
-        <section class="call-to-action">
+        <section class="home-cta">
+
             <h2>Ready for Your Next Adventure?</h2>
 
             <p>
@@ -59,31 +71,33 @@
             </p>
 
             <a href="trips.html">View Our Trips</a>
+
         </section>
 
         <section class="home-grid">
 
             <article>
-                <img src="images/rafting1.jpg"
-                    alt="Rafting adventure on the river">
+                <img src="images/adventure1.jpg"
+                    alt="Whitewater rafting adventure in the mountains">
 
                 <h2>Exciting Adventures</h2>
 
                 <p>
                     Enjoy exciting rafting experiences while
-                    exploring beautiful rivers and scenery.
+                    exploring beautiful rivers and natural scenery.
                 </p>
             </article>
 
             <article>
-                <img src="images/rafting3.jpg"
-                    alt="Group of people enjoying rafting">
+                <img src="images/adventure2.jpg"
+                    alt="Rafting group enjoying a mountain river">
 
                 <h2>Adventure for Everyone</h2>
 
                 <p>
-                    We offer experiences for beginners and
-                    experienced rafters.
+                    Our rafting experiences provide opportunities
+                    for beginners and experienced rafters to enjoy
+                    the excitement of the river.
                 </p>
             </article>
 
@@ -92,9 +106,22 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Whitewater Rafting. All rights reserved.</p>
+        <p>©️ 2026 Whitewater Rafting Organizations | Osarodion Bright Oguma</p>
+
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
+            </a>
+
+            <a href="https://www.instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram Icon">
+            </a>
+        </nav>
     </footer>
 
 </body>
-
 </html>
